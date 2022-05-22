@@ -1,3 +1,14 @@
+from matplotlib import docstring
+
+
+
+# public s3 bucket for input dataset `s3://awsglue-datasets/examples/us-legislators/all`
+#Steps to generate table metadata in glue catalog
+#1. Create crawler with appropriate IAM role and above s3 bucket for data store
+#2. create connection in catalog and configure it to use rds endpoint and other credentials
+#3. use name of this connection in from_jdbc_conf() call, as a value of catalog_connection parameter
+#4. While writing to s3 use appropriate connection_options
+
 
 import sys
 from awsglue.transforms import *
