@@ -1,3 +1,6 @@
+# Add parameters while starting job using boto3 glue client using Arguments parameter or 
+#from console go to security configuration and add arguments in job parameters sections (include hypens)
+
 import sys
 from awsglue.transforms import *
 from awsglue.utils import getResolvedOptions
@@ -17,8 +20,3 @@ args = getResolvedOptions(sys.argv,
                            
 print( "The day-partition key is: ", args['day_partition_key'])
 print( "The hour-partition key is: ", args['hour_partition_key'])
-
-
-
-# Add parameters while starting job using boto3 glue client using Arguments parameter or 
-#from console go to security configuration and add arguments in job parameters sections (include hypens)

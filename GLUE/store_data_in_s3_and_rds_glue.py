@@ -1,7 +1,3 @@
-from matplotlib import docstring
-
-
-
 # public s3 bucket for input dataset `s3://awsglue-datasets/examples/us-legislators/all`
 #Steps to generate table metadata in glue catalog
 #1. Create crawler with appropriate IAM role and above s3 bucket for data store
